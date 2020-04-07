@@ -9,8 +9,7 @@ API_KEY = ''
 SECRET_KEY = ''
 
 #Cerat baidu ocr client object
-# bd_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
-bd_ocr_client = AipOcr('17576714','gwjDNjYzWsdGwHxsa8DyuAGP','5bqz3C16U4QknWGKHxRswWo3b7eMzGw8')
+bd_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 ALLOWED_EXTENSIONS = ['jpg','png']
 app = Flask(__name__)
 
@@ -62,5 +61,5 @@ def set_database(b,fn,r):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
